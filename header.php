@@ -18,7 +18,7 @@
 
     <!--Change Title and Meta tags-->
     <title><?php echo get_bloginfo('name'); ?></title>
-    <meta name="description" content="Complete Care Physiotherapy & Osteopathy | Wallan | Fawkner | Point Cook">
+    <meta name="description" content="<?php echo get_bloginfo('description'); ?>">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Nishan M">
 
