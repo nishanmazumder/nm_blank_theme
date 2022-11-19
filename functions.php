@@ -53,12 +53,7 @@ function nm_theme_get_instance()
 require_once NM_DIR_PATH . '/inc/template-functions.php';
 
 /**
- * Template Tags
- */
-require_once NM_DIR_PATH . '/inc/template-tags.php';
-
-/**
  * Load Require plugin by TGM
  */
-require_once NM_DIR_PATH . '/inc/tgm-activation.php';
-require_once NM_DIR_PATH . '/inc/tgm-config.php';
+require_once NM_DIR_PATH . '/lib/tgm-activation.php';
+require_once NM_DIR_PATH . '/lib/tgm-config.php';

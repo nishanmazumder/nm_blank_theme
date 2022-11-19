@@ -11,17 +11,11 @@ class ComposerStaticInit6e763a980288dfb0c0c65092bc0bbda4
         'NM_THEME\\Classes\\Assets' => __DIR__ . '/../..' . '/classes/class-assets.php',
         'NM_THEME\\Classes\\Blank' => __DIR__ . '/../..' . '/classes/class-blank.php',
         'NM_THEME\\Classes\\Menus' => __DIR__ . '/../..' . '/classes/class-menus.php',
-        'NM_THEME\\Classes\\NM_THEME' => __DIR__ . '/../..' . '/classes/class-nm-theme.php',
+        'NM_THEME\\Classes\\NM_THEME' => __DIR__ . '/../..' . '/classes/class-theme.php',
+        'NM_THEME\\Classes\\Post_Type' => __DIR__ . '/../..' . '/classes/class-post.php',
         'NM_THEME\\Classes\\Sidebar' => __DIR__ . '/../..' . '/classes/class-sidebar.php',
         'NM_THEME\\Classes\\Widget' => __DIR__ . '/../..' . '/classes/class-widget.php',
         'NM_THEME\\Traits\\Singleton' => __DIR__ . '/../..' . '/classes/traits/trait-singleton.php',
-        'TGMPA_Bulk_Installer' => __DIR__ . '/../..' . '/inc/tgm-activation.php',
-        'TGMPA_Bulk_Installer_Skin' => __DIR__ . '/../..' . '/inc/tgm-activation.php',
-        'TGMPA_List_Table' => __DIR__ . '/../..' . '/inc/tgm-activation.php',
-        'TGMPA_Utils' => __DIR__ . '/../..' . '/inc/tgm-activation.php',
-        'TGM_Bulk_Installer' => __DIR__ . '/../..' . '/inc/tgm-activation.php',
-        'TGM_Bulk_Installer_Skin' => __DIR__ . '/../..' . '/inc/tgm-activation.php',
-        'TGM_Plugin_Activation' => __DIR__ . '/../..' . '/inc/tgm-activation.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -1,9 +1,11 @@
 <?php
 
 /**
+ *
  * Theme Sidebar
- * 
+ *
  * @package NM_THEME
+ *
  */
 
 namespace NM_THEME\Classes;
@@ -31,7 +33,7 @@ class Sidebar
         //Post Sidebar
         register_sidebar(
             array(
-                'id'            => 'post-sidebar',
+                'id'            => 'nm-primary-sidebar',
                 'name'          => __( 'Primary Sidebar', 'nm_theme'),
                 'description'   => __( 'Widgets for page sidebar', 'nm_theme'),
                 'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -42,17 +44,17 @@ class Sidebar
         );
 
         //Footer Widgets
-        // register_sidebar(
-        //     array(
-        //         'id'            => 'footer-sidebar',
-        //         'name'          => __( 'Footer Menu', 'nm_theme'),
-        //         'description'   => __( 'Widgets for footer social', 'nm_theme'),
-        //         'before_widget' => '<div id="%1$s" class="col-md-3 col-sm-6 col-xs-12 %2$s">',
-        //         'after_widget'  => '</div>',
-        //         'before_title'  => '<h4 class="nm_font_mont">',
-        //         'after_title'   => '</h4>',
-        //     )
-        // );
+        register_sidebar(
+            array(
+                'id'            => 'nm-footer-sidebar',
+                'name'          => __( 'Footer Sidebar', 'nm_theme'),
+                'description'   => __( 'Widgets for footer', 'nm_theme'),
+                'before_widget' => '<div id="%1$s" class="col-md-3 col-sm-6 col-xs-12 %2$s">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h4 class="footer-widget-title">',
+                'after_title'   => '</h4>',
+            )
+        );
     }
 
 }

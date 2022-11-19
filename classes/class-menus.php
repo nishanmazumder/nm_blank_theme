@@ -1,9 +1,11 @@
 <?php
 
 /**
+ *
  * Theme menu
- * 
+ *
  * @package NM_THEME
+ *
  */
 
 namespace NM_THEME\Classes;
@@ -23,7 +25,7 @@ class Menus
     protected function setup_hooks()
     {
         //Actions
-        //add_action('init', [$this, 'nm_theme_register_menu']);
+        add_action('init', [$this, 'nm_theme_register_menu']);
     }
 
     public function nm_theme_register_menu()

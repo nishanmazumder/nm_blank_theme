@@ -1,9 +1,11 @@
 <?php
 
 /**
- * Theme Enqueue
- * 
+ *
+ * Blank Class
+ *
  * @package NM_THEME
+ *
  */
 
 namespace NM_THEME\Classes;
@@ -26,5 +28,5 @@ class Blank
         add_action('wp_enqueue_scripts', [$this, 'register_styles']);
     }
 
-    
+
 }
