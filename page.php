@@ -2,13 +2,13 @@
 
 /**
  * Page
- * 
+ *
  * @package NM_THEME
  */
 
 get_header();
 
-get_template_part('template-parts/header/site', 'title');
+do_action('nm_page_title');
 
 if (have_posts()) :
     while (have_posts()) : the_post();

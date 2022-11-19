@@ -72,3 +72,16 @@ function nm_get_menu()
 <?php
     }
 }
+
+// Get Page title
+
+add_action('nm_page_title', 'nm_get_page_title');
+
+function nm_get_page_title()
+{
+    $page_title_show = get_post_meta(get_the_ID(), '_hide_page_meta_key');
+
+    if (is_array($page_title_show) && in_array('yes', $page_title_show)) {
+        echo esc_html(wp_title(''));
+    }
+}
