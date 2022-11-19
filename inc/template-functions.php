@@ -198,4 +198,3 @@ function nm_copyright_text($text, $link, $linktext)
 
     echo $copyright;
 }
-

@@ -38,7 +38,8 @@ class Menus
         );
     }
 
-    public function get_menu_id($location){
+    public function get_menu_id($location)
+    {
         $locations = get_nav_menu_locations();
 
         //Get Menu id by location
@@ -47,18 +48,19 @@ class Menus
         return !empty($menu_id) ? $menu_id : '';
     }
 
-    public function get_child_menu_items($parent_id, $menu_items){
+    public function get_child_menu_items($parent_id, $menu_items)
+    {
 
-        $child_menu = [];
+        $child_menus = [];
 
-        if(!empty($menu_items) && is_array($menu_items)){
-            foreach($menu_items as $menu_item){
-                if(intval($menu_item->menu_item_parent) === $parent_id){
-                    array_push($child_menu, $menu_item);
+        if (!empty($menu_items) && is_array($menu_items)) {
+            foreach ($menu_items as $menu_item) {
+                if (intval($menu_item->menu_item_parent) === $parent_id) {
+                    array_push($child_menus, $menu_item);
                 }
             }
         }
 
-        return $child_menu;
+        return $child_menus;
     }
 }
